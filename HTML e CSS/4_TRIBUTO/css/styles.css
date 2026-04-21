@@ -1,0 +1,76 @@
+html {
+    font-family: Helvetica;
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 1100px;  /* limita a largura máxima */
+    background-color: #fff;
+    position: relative; /* necessário para posicionar os elementos filhos de forma relativa a este container */
+    margin: 50px auto;  /* centraliza horizontalmente */
+    padding: 20px 50px; /* adiciona espaçamento interno */
+}
+
+.bold {
+    font-weight: bold; /* deixa o texto em negrito */
+}
+
+/* header */
+.header {
+    text-align: center; /* centraliza o texto */
+}
+
+.main-title {
+    font-size: 40px; /* aumenta o tamanho da fonte */
+}
+
+.main-paragraph {
+    font-style: italic; /* deixa o texto em itálico */
+}
+
+/* imagem destaque */
+.featured-image {
+    text-align: center; /* centraliza a imagem e a legenda */
+    margin-top: 30px; /* adiciona espaçamento acima da imagem */
+}
+
+/* Biografia */
+.biography-container {
+    padding: 25px 0; /* 25 adiciona espaçamento vertical e 0 adiciona espaçamento horizontal */
+    margin: 25px 0; /* 25 adiciona espaçamento vertical e 0 adiciona espaçamento horizontal */
+    border-top: 1px dashed #ddd; /* adiciona uma borda superior traçada */
+    border-bottom: 1px dashed #ddd; /* adiciona uma borda inferior traçada */
+}
+
+/* citações */
+.quotes-container {
+    background-color: #ddd; /* cor de fundo para destacar as citações */
+    padding: 30px; /* adiciona espaçamento interno */
+}
+
+.quotes-container blockquote { /* a blockquote está dentro do container de citações */
+    font-weight: bold; /* deixa o texto em negrito */
+    font-size: 30px; /* aumenta o tamanho da fonte */
+}
+
+.quotes-container p { /* o parágrafo está dentro do container de citações */
+    font-style: italic; /* deixa o texto em itálico */
+}
+
+/* Curiosidades */
+.curiosities-container {
+    padding: 25px 0; /* 25 adiciona espaçamento vertical e 0 adiciona espaçamento horizontal */
+    margin: 25px 0; /* 25 adiciona espaçamento vertical e 0 adiciona espaçamento horizontal */
+    border-top: 1px dashed #ddd; /* adiciona uma borda superior traçada */
+    border-bottom: 1px dashed #ddd; /* adiciona uma borda inferior traçada */
+}
+
+.curiosities-container li {
+    height: 30px; /* define uma altura fixa para cada item da lista */
+}
+
+/* imagem bold */
+.img-bold {
+    font-weight: bold; /* deixa o texto em negrito */
+    text-align: center; /* centraliza o texto e a imagem */
+}
