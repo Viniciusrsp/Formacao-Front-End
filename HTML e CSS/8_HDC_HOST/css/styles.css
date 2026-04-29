@@ -1,0 +1,380 @@
+/* Geral */
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    font-family: Helvetica; /* Define a fonte padrão para o site */
+    box-sizing: border-box; /* Inclui o padding e a borda dentro do tamanho total dos elementos */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 80px; /* Ajuste da altura da navbar */
+    background-color: #232a31;
+    padding: 0 2rem; /* Ajuste do preenchimento lateral */
+}
+
+nav {
+    position: relative; /* Permite posicionar os elementos dentro da navbar */
+}
+
+.logo {
+    width: 50px; /* Ajuste da largura da logo */
+    margin-top: 15px; /* Ajuste da margem superior */
+}
+
+.navbar-items {
+    position: absolute; /* Permite posicionar os itens de navegação */
+    right: 0; /* Alinha os itens à direita da navbar */
+    height: 80px; /* Ajuste da altura dos itens de navegação */
+    line-height: 80px; /* Centraliza verticalmente os itens de navegação */
+    margin: 0; /* Remove a margem padrão da lista */
+    display: inline-block; /* Exibe os itens de navegação em linha */
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    margin-left: 25px; /* Ajuste da margem entre os itens de navegação */
+}
+
+.navbar-items a {
+    color: #fff; /* Cor dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: .5s; /* Adiciona uma transição suave para os links de navegação */
+}
+
+.navbar-items a:hover {
+    color: #ccc; /* Cor dos links de navegação ao passar o mouse */
+}
+
+.default-btn {
+    padding: 15px 20px; /* Ajuste do preenchimento do botão */
+    background-color: #2cc76a; /* Cor de fundo do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #22bb5f; /* Cor de fundo do botão ao passar o mouse */
+    color: #fff; /* Cor do texto do botão ao passar o mouse */
+}
+
+/* main banner */
+.main-banner {
+    background-image: url(../img/mainbanner.png); /* Define a imagem de fundo do banner principal */
+    padding: 10rem 0; /* Ajuste do preenchimento vertical do banner principal */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área do banner principal */
+    background-position: center; /* Centraliza a imagem de fundo do banner principal */
+}
+
+.main-banner h1,
+.main-banner p {
+    color: #fff; /* Cor do texto do banner principal */
+    text-align: center; /* Centraliza o texto do banner principal */
+    font-weight: bold; /* Deixa o texto do banner principal em negrito */
+    text-shadow: #000 3px 2px 3px; /* Adiciona uma sombra ao texto do banner principal para melhorar a legibilidade */
+}
+
+.main-banner h1 {
+    font-size: 54px; /* Ajuste do tamanho da fonte do título do banner principal */
+}
+
+.main-banner p {
+    font-size: 32px; /* Ajuste do tamanho da fonte do texto do banner principal */
+}
+
+/* serviços */
+.services-container {
+    padding: 5rem 0; /* Ajuste do preenchimento vertical da seção de serviços */
+}
+
+.services-container ul {
+    display: flex; /* Exibe os itens de serviço em linha */
+    width: 90%; /* Ajuste da largura da lista de serviços */
+    margin: 0 auto; /* Centraliza a lista de serviços */
+}
+
+.services-container li {
+    flex: 1 1 200px; /* Permite que os itens de serviço cresçam e encolham, com um tamanho mínimo de 200px */
+    list-style: none; /* Remove os marcadores da lista */
+    text-align: center; /* Centraliza o texto dos itens de serviço */
+    padding: 20px; /* Ajuste do preenchimento dos itens de serviço */
+}
+
+.fas {
+    font-size: 60px; /* Ajuste do tamanho dos ícones de serviço */
+    margin-bottom: 15px; /* Ajuste da margem inferior dos ícones de serviço */
+}
+
+.fa-shield-alt {
+    color: #2cc76a; /* Cor do ícone de segurança */
+}
+
+.fa-rocket {
+    color: #ef3f29; /* Cor do ícone de desempenho */
+}
+
+.fa-comments {
+    color: #ef8f29; /* Cor do ícone de suporte */
+}
+
+.services-container h3 {
+    margin-bottom: 25px; /* Ajuste da margem inferior dos títulos dos itens de serviço */
+}
+
+.services-container p {
+    line-height: 24px; /* Ajuste do espaçamento entre as linhas do texto dos itens de serviço */
+}
+
+/* price and plans */
+.pricing-container {
+    padding-bottom: 5rem; /* Ajuste do preenchimento inferior da seção de preços e planos */
+    text-align: center; /* Centraliza o texto da seção de preços e planos */
+}
+
+.pricing-container h2 {
+    font-size: 36px; /* Ajuste do tamanho da fonte do título da seção de preços e planos */
+}
+
+.pricing-container p {
+    font-size: 20px; /* Ajuste do tamanho da fonte do texto da seção de preços e planos */ 
+}
+
+.plans-container {
+    display: flex; /* Exibe os planos em linha */
+    justify-content: space-between; /* Distribui os planos uniformemente */
+    width: 90%; /* Ajuste da largura do container de planos */
+    margin: 50px auto 0; /* Centraliza o container de planos */
+}
+
+.plan {
+    flex: 1; /* Permite que os planos cresçam igualmente */
+    max-width: 275px; /* Define a largura máxima dos planos */
+    margin: 0 20px; /* Ajuste da margem vertical dos planos */
+}
+
+.plan ul {
+    padding: 0; /* Remove o preenchimento padrão da lista de recursos do plano */   
+}
+
+.plan li {
+    list-style: none; /* Remove os marcadores da lista de recursos do plano */
+    height: 50px; /* Ajuste da altura dos itens de recurso do plano */
+    line-height: 50px; /* Centraliza verticalmente os itens de recurso do plano */
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price {
+    width: 120px; /* Ajuste da largura do preço do plano */
+    height: 120px; /* Ajuste da altura do preço do plano */
+    border-radius: 50%; /* Torna o preço do plano circular */
+    background-color: #2cc762; /* Cor de fundo do preço do plano */
+    color: #fff; /* Cor do texto do preço do plano */
+    text-align: center; /* Centraliza o texto do preço do plano */
+    line-height: 120px; /* Centraliza verticalmente o texto do preço do plano */
+    margin: 0 auto -50px; /* Centraliza o preço do plano e ajusta a margem inferior para sobrepor os itens de recurso do plano */
+    font-size: 18px; /* Ajuste do tamanho da fonte do preço do plano */
+    position: relative; /* Permite posicionar o preço do plano em relação aos itens de recurso do plano */
+}
+
+.plan .plan-name {
+    text-transform: uppercase; /* Transforma o nome do plano em maiúsculas */
+    font-size: 20px; /* Ajuste do tamanho da fonte do nome do plano */
+    font-weight: bold; /* Deixa o nome do plano em negrito */
+    color: #fff; /* Cor do texto do nome do plano */
+    background-color: #202b34; /* Cor de fundo do nome do plano */
+    padding: 50px 0; /* Ajuste do preenchimento do nome do plano */
+}
+
+.plan .plan-btn {
+    background-color: #2cc762; /* Cor de fundo do botão do plano */
+    color: #fff; /* Cor do texto do botão do plano */
+    font-size: 24px; /* Ajuste do tamanho da fonte do botão do plano */
+    height: 75px; /* Ajuste da altura do botão do plano */
+    line-height: 75px; /* Centraliza verticalmente o texto do botão do plano */
+    cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o botão do plano */
+}
+
+.plan .recommended {
+    background-color: #f45c57; /* Cor de fundo do plano recomendado */
+}
+
+/* search domain */
+.searchdomain-container {
+    background-color: #34454e; /* Cor de fundo da seção de busca de domínio */
+    text-align: center; /* Centraliza o texto da seção de busca de domínio */
+    padding: 5rem 0; /* Ajuste do preenchimento vertical da seção de busca de domínio */
+}
+
+.searchdomain-container h2 {
+    color: #fff; /* Cor do título da seção de busca de domínio */
+    font-size: 42px; /* Ajuste do tamanho da fonte do título da seção de busca de domínio */
+    margin-bottom: 15px; /* Ajuste da margem inferior do título da seção de busca de domínio */
+}
+
+.searchdomain-container p {
+    color: #d5d5d5; /* Cor do texto da seção de busca de domínio */
+    font-size: 24px; /* Ajuste do tamanho da fonte do texto da seção de busca de domínio */
+    margin-bottom: 25px; /* Ajuste da margem inferior do texto da seção de busca de domínio */
+}
+
+.searchdomain-container input {
+    display: block; /* Exibe os campos de entrada como blocos para que fiquem em linhas separadas */
+    border: none; /* Remove a borda dos campos de entrada */
+    border-radius: 5px; /* Arredonda os cantos dos campos de entrada */
+    margin: 0 auto; /* Centraliza os campos de entrada */
+}
+
+.searchdomain-container input[type="text"] { /* Estilos para o campo de texto da busca de domínio */
+   width: 60%; /* Ajuste da largura do campo de texto da busca de domínio */
+   padding: 20px; /* Ajuste do preenchimento do campo de texto da busca de domínio */
+   font-size: 20px; /* Ajuste do tamanho da fonte do campo de texto da busca de domínio */
+   margin-bottom: 25px; /* Ajuste da margem inferior do campo de texto da busca de domínio */
+}
+
+.searchdomain-container input[type="submit"] { /* Estilos para o botão de envio da busca de domínio */
+    background-color: #2cc76a; /* Cor de fundo do botão de envio da busca de domínio */
+    color: #fff; /* Cor do texto do botão de envio da busca de domínio */
+    font-size: 24px; /* Ajuste do tamanho da fonte do botão de envio da busca de domínio */
+    padding: 15px 30px; /* Ajuste do preenchimento do botão de envio da busca de domínio */
+    cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o botão de envio da busca de domínio */
+    opacity: .9; /* Adiciona uma transição suave para o botão de envio da busca de domínio */
+}
+
+.searchdomain-container input[type="submit"]:hover { /* Estilos para o botão de envio da busca de domínio ao passar o mouse */
+    opacity: 1; /* Remove a opacidade do botão de envio da busca de domínio ao passar o mouse */
+}
+
+/* contact form */
+.contact-container {
+    text-align: center; /* Centraliza o texto da seção de contato */
+    padding: 5rem 0 2rem 0; /* Ajuste do preenchimento da seção de contato */
+}
+
+.contact-container h2 {
+    font-size: 36px; /* Ajuste do tamanho da fonte do título da seção de contato */
+    margin-bottom: 15px; /* Ajuste da margem inferior do título da seção de contato */
+}
+
+.contact-container p {
+    font-size: 20px; /* Ajuste do tamanho da fonte do texto da seção de contato */
+    margin-bottom: 40px; /* Ajuste da margem inferior do texto da seção de contato */
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px; /* Ajuste da largura dos campos de entrada e área de texto do formulário de contato */
+    padding: 10px 20px; /* Ajuste do preenchimento dos campos de entrada e área de texto do formulário de contato */
+    font-size: 16px; /* Ajuste do tamanho da fonte dos campos de entrada e área de texto do formulário de contato */
+    border-radius: 5px; /* Arredonda os cantos dos campos de entrada e área de texto do formulário de contato */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara aos campos de entrada e área de texto do formulário de contato */
+    margin: 0 10px 20px; /* Ajuste da margem dos campos de entrada e área de texto do formulário de contato */
+}
+
+.contact-container textarea {
+    display: block; /* Exibe a área de texto como um bloco para que fique em uma linha separada */
+    margin: 0 auto 20px; /* Centraliza a área de texto e ajusta a margem inferior */
+    width: 470px; /* Ajuste da largura da área de texto do formulário de contato */
+    height: 150px; /* Ajuste da altura da área de texto do formulário de contato */
+}
+
+.contact-container input[type="submit"] {
+    display: block; /* Exibe o botão de envio como um bloco para que fique em uma linha separada */
+    margin: 0 auto; /* Centraliza o botão de envio */
+    background-color: #2cc76a; /* Cor de fundo do botão de envio do formulário de contato */
+    color: #fff; /* Cor do texto do botão de envio do formulário de contato */
+    cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o botão de envio do formulário de contato */
+}
+
+/* footer */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    font-weight: bold; /* Deixa o texto do rodapé em negrito */
+    margin: 50px 0 100px; /* Ajuste da margem do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 2rem 0; /* Ajuste do preenchimento do rodapé */
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+
+  .plan {
+    margin: 0 5px;
+  }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+  .main-banner p {
+    padding: 0 6rem;
+  }
+
+  .searchdomain-container {
+    padding: 2rem 4rem;
+  }
+}
+
+/* celular 576px */
+@media (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-items li {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .main-banner p {
+    padding: 0 2rem;
+  }
+
+  .services-container ul {
+    flex-direction: column;
+  }
+
+  .plans-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .searchdomain-container h2 {
+    font-size: 28px;
+  }
+
+  .searchdomain-container input[type="text"] {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 3rem 2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
